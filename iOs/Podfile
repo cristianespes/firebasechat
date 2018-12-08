@@ -7,6 +7,5 @@ target 'ChatKeepcoding' do
 
 # Pods for ChatKeepcoding
   pod 'MessageKit'
-  pod 'Scaledrone', '~> 0.3.0'
 
 end
