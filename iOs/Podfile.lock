@@ -1,12 +1,24 @@
 PODS:
   - MessageKit (0.13.1)
+  - Scaledrone (0.3.0):
+    - Starscream (~> 2.1.0)
+  - Starscream (2.1.1)
 
 DEPENDENCIES:
   - MessageKit
+  - Scaledrone (~> 0.3.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MessageKit
+    - Scaledrone
+    - Starscream
 
 SPEC CHECKSUMS:
   MessageKit: fc74d71d9b05385138d47b3a4b7beef5c687daf1
+  Scaledrone: 25e5e70107222ed50046fc0ed9569915bdb85262
+  Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
 
-PODFILE CHECKSUM: 4304f8091801eaf946e7ca503671ff0f50a95d07
+PODFILE CHECKSUM: a0431b92f43864501e6c1bc3acbbaa44301cd234
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.5.3
