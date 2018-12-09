@@ -1,9 +1,11 @@
-  platform :ios, "11.0"
-  use_frameworks!
-  inhibit_all_warnings!
+platform :ios, "11.0"
+use_frameworks!
+inhibit_all_warnings!
+
+target 'ChatKeepcoding' do
+    
   pod 'MessageKit'
-
-
+  
   post_install do |installer|
       installer.pods_project.targets.each do |target|
           if target.name == 'MessageKit'
