@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E480063E17A03F90D27AB37 /* libPods-ChatKeepcoding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 610AC45DE08413C272EDAF1A /* libPods-ChatKeepcoding.a */; };
+		19B6B7CE21BEFB3F00724F43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B6B7CD21BEFB3F00724F43 /* GoogleService-Info.plist */; };
+		19B6B7D221BF005B00724F43 /* UserFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7D121BF005B00724F43 /* UserFirebase.swift */; };
+		19B6B7D421BF08DA00724F43 /* DiscussionFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7D321BF08DA00724F43 /* DiscussionFirebase.swift */; };
+		19B6B7D721BF0C9F00724F43 /* Discussion+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7D621BF0C9F00724F43 /* Discussion+Firebase.swift */; };
+		19B6B7D921BF146300724F43 /* LogFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7D821BF146300724F43 /* LogFirebase.swift */; };
+		19B6B7DB21BF175E00724F43 /* MessageFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7DA21BF175E00724F43 /* MessageFirebase.swift */; };
+		19B6B7DD21BF1AE400724F43 /* Message+Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7DC21BF1AE400724F43 /* Message+Firebase.swift */; };
 		33845AA7206304B400800A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33845AA6206304B400800A99 /* AppDelegate.swift */; };
 		33845AA9206304B400800A99 /* DiscussionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33845AA8206304B400800A99 /* DiscussionViewController.swift */; };
 		33845AAC206304B400800A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33845AAA206304B400800A99 /* Main.storyboard */; };
@@ -43,9 +49,17 @@
 		338BCB4420725D81004303F7 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338BCB4320725D81004303F7 /* LogManager.swift */; };
 		338BCB4620725E34004303F7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338BCB4520725E34004303F7 /* Event.swift */; };
 		338BCB482072621A004303F7 /* LogDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338BCB472072621A004303F7 /* LogDummy.swift */; };
+		9E2CD439C05E23DA73F1F3FD /* Pods_ChatKeepcoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38FB3FE34599A2938AAA386D /* Pods_ChatKeepcoding.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19B6B7CD21BEFB3F00724F43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		19B6B7D121BF005B00724F43 /* UserFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebase.swift; sourceTree = "<group>"; };
+		19B6B7D321BF08DA00724F43 /* DiscussionFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionFirebase.swift; sourceTree = "<group>"; };
+		19B6B7D621BF0C9F00724F43 /* Discussion+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Discussion+Firebase.swift"; sourceTree = "<group>"; };
+		19B6B7D821BF146300724F43 /* LogFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFirebase.swift; sourceTree = "<group>"; };
+		19B6B7DA21BF175E00724F43 /* MessageFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFirebase.swift; sourceTree = "<group>"; };
+		19B6B7DC21BF1AE400724F43 /* Message+Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+Firebase.swift"; sourceTree = "<group>"; };
 		33845AA3206304B400800A99 /* ChatKeepcoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatKeepcoding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33845AA6206304B400800A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33845AA8206304B400800A99 /* DiscussionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionViewController.swift; sourceTree = "<group>"; };
@@ -83,7 +97,7 @@
 		338BCB4320725D81004303F7 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		338BCB4520725E34004303F7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		338BCB472072621A004303F7 /* LogDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDummy.swift; sourceTree = "<group>"; };
-		610AC45DE08413C272EDAF1A /* libPods-ChatKeepcoding.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatKeepcoding.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38FB3FE34599A2938AAA386D /* Pods_ChatKeepcoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatKeepcoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E704CAF74B4FC475EBCC74 /* Pods-ChatKeepcoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatKeepcoding.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding.release.xcconfig"; sourceTree = "<group>"; };
 		884B5BE89B135947476C4C4E /* Pods_FirebaseKeepcoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseKeepcoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5596D4E729AC87B8C24B6C0 /* Pods-ChatKeepcoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatKeepcoding.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,13 +108,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E480063E17A03F90D27AB37 /* libPods-ChatKeepcoding.a in Frameworks */,
+				9E2CD439C05E23DA73F1F3FD /* Pods_ChatKeepcoding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19B6B7D021BF004700724F43 /* FirebaseImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				19B6B7D321BF08DA00724F43 /* DiscussionFirebase.swift */,
+				19B6B7DA21BF175E00724F43 /* MessageFirebase.swift */,
+				19B6B7D121BF005B00724F43 /* UserFirebase.swift */,
+				19B6B7D821BF146300724F43 /* LogFirebase.swift */,
+			);
+			path = FirebaseImplementation;
+			sourceTree = "<group>";
+		};
+		19B6B7D521BF0C8A00724F43 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				19B6B7D621BF0C9F00724F43 /* Discussion+Firebase.swift */,
+				19B6B7DC21BF1AE400724F43 /* Message+Firebase.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 		19BE9268DE009D75F418689A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +227,7 @@
 			children = (
 				33845AAD206304B400800A99 /* Assets.xcassets */,
 				33845AB2206304B400800A99 /* Info.plist */,
+				19B6B7CD21BEFB3F00724F43 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,6 +256,7 @@
 		33845B1D206C139A00800A99 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				19B6B7D521BF0C8A00724F43 /* Firebase */,
 				33845AC62063079300800A99 /* Discussion.swift */,
 				33845B0A206B126A00800A99 /* Message.swift */,
 				338BCB2B206EEC5B004303F7 /* MessageType.swift */,
@@ -245,6 +281,7 @@
 		33845B1F206C13A700800A99 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				19B6B7D021BF004700724F43 /* FirebaseImplementation */,
 				33845B20206C13DA00800A99 /* DummyImplementation */,
 				33845ACD206309D900800A99 /* DiscussionManager.swift */,
 				33845B0E206B13E500800A99 /* MessageManager.swift */,
@@ -287,7 +324,7 @@
 			isa = PBXGroup;
 			children = (
 				884B5BE89B135947476C4C4E /* Pods_FirebaseKeepcoding.framework */,
-				610AC45DE08413C272EDAF1A /* libPods-ChatKeepcoding.a */,
+				38FB3FE34599A2938AAA386D /* Pods_ChatKeepcoding.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -303,7 +340,7 @@
 				33845A9F206304B400800A99 /* Sources */,
 				33845AA0206304B400800A99 /* Frameworks */,
 				33845AA1206304B400800A99 /* Resources */,
-				DD551F8E220EFAE55225F205 /* [CP] Copy Pods Resources */,
+				46A550708A3ABB11AAD46B34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				33845AB1206304B400800A99 /* LaunchScreen.storyboard in Resources */,
+				19B6B7CE21BEFB3F00724F43 /* GoogleService-Info.plist in Resources */,
 				33845AAE206304B400800A99 /* Assets.xcassets in Resources */,
 				33845AAC206304B400800A99 /* Main.storyboard in Resources */,
 			);
@@ -362,6 +400,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46A550708A3ABB11AAD46B34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E391A8141EA53912C9BA414 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,24 +448,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD551F8E220EFAE55225F205 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/MessageKit/MessageKitAssets.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MessageKitAssets.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -407,10 +457,12 @@
 			files = (
 				33845AA9206304B400800A99 /* DiscussionViewController.swift in Sources */,
 				33845B34206C556B00800A99 /* UploadDummy.swift in Sources */,
+				19B6B7DD21BF1AE400724F43 /* Message+Firebase.swift in Sources */,
 				33845B2F206C54ED00800A99 /* UploadInteractor.swift in Sources */,
 				33845ACE206309D900800A99 /* DiscussionManager.swift in Sources */,
 				33845B18206B2A6C00800A99 /* ChatViewController+ImagePicker.swift in Sources */,
 				33845B2D206C1BDB00800A99 /* LoginViewController.swift in Sources */,
+				19B6B7D421BF08DA00724F43 /* DiscussionFirebase.swift in Sources */,
 				33845B24206C178A00800A99 /* UserInteractor.swift in Sources */,
 				338BCB2C206EEC5B004303F7 /* MessageType.swift in Sources */,
 				33845B14206B190000800A99 /* ChatViewController+Layout.swift in Sources */,
@@ -422,9 +474,12 @@
 				33845B2A206C19EB00800A99 /* UserDummy.swift in Sources */,
 				338BCB482072621A004303F7 /* LogDummy.swift in Sources */,
 				33845AA7206304B400800A99 /* AppDelegate.swift in Sources */,
+				19B6B7D721BF0C9F00724F43 /* Discussion+Firebase.swift in Sources */,
+				19B6B7D221BF005B00724F43 /* UserFirebase.swift in Sources */,
 				33845ADF206323A800800A99 /* ChatViewController.swift in Sources */,
 				33845ACC2063099600800A99 /* DiscussionInteractor.swift in Sources */,
 				33845B31206C551200800A99 /* UploadManager.swift in Sources */,
+				19B6B7DB21BF175E00724F43 /* MessageFirebase.swift in Sources */,
 				33845AC72063079300800A99 /* Discussion.swift in Sources */,
 				33845B22206C149300800A99 /* MessageInteractor.swift in Sources */,
 				33845B05206B114300800A99 /* ChatViewController+DataSource.swift in Sources */,
@@ -437,6 +492,7 @@
 				33845B26206C17DB00800A99 /* UserManager.swift in Sources */,
 				33845B16206B191700800A99 /* ChatViewController+InputBar.swift in Sources */,
 				33845B28206C187100800A99 /* User.swift in Sources */,
+				19B6B7D921BF146300724F43 /* LogFirebase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,11 +634,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42UB6JE5FK;
+				DEVELOPMENT_TEAM = W9B4U9692J;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatKeepcoding/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.keepcoding.ChatKeepcoding;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keepcoding.cristianespes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -597,11 +653,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 42UB6JE5FK;
+				DEVELOPMENT_TEAM = W9B4U9692J;
 				INFOPLIST_FILE = "$(SRCROOT)/ChatKeepcoding/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.keepcoding.ChatKeepcoding;
+				PRODUCT_BUNDLE_IDENTIFIER = io.keepcoding.cristianespes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

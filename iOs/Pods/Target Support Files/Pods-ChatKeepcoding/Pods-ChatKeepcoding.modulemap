@@ -1,4 +1,4 @@
-module Pods_ChatKeepcoding {
+framework module Pods_ChatKeepcoding {
   umbrella header "Pods-ChatKeepcoding-umbrella.h"
 
   export *

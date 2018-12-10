@@ -17,7 +17,8 @@ public class LogInteractor {
     }
     
     public convenience init(){
-        self.init(manager: LogDummy())
+        //self.init(manager: LogDummy())
+        self.init(manager: LogFirebase())
     }
     
 }

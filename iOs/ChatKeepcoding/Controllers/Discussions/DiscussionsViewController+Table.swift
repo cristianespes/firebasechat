@@ -16,7 +16,7 @@ extension DiscussionViewController: UITableViewDelegate, UITableViewDataSource {
         self.discussionsTable.delegate = self
         self.discussionsTable.dataSource = self
         
-        let manager = DiscussionInteractor.init(manager: DiscussionDummy()).manager
+        let manager = DiscussionInteractor.init(manager: DiscussionFirebase()).manager
         manager.list(onSuccess: { (discussions) in
             self.discussions = discussions
             self.discussionsTable.reloadData()

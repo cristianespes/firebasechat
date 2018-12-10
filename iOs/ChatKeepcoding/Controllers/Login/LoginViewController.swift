@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let manager = UserInteractor.init(manager: UserDummy()).manager
+        let manager = UserInteractor.init(manager: UserFirebase()).manager
         manager.isLogged(onSuccess: { (user) in
             if let u = user {
                 self.navigateToDiscussions(user: u)
@@ -45,7 +45,7 @@ class LoginViewController: UIViewController {
         
         let user = User.init(id: "", email: email, password: password)
         
-        let manager = UserInteractor.init(manager: UserDummy()).manager
+        let manager = UserInteractor.init(manager: UserFirebase()).manager
         manager.login(user: user, onSuccess: { (user) in
             self.navigateToDiscussions(user: user)
         }) { (error) in
@@ -66,7 +66,7 @@ class LoginViewController: UIViewController {
         
         let user = User.init(id: "", email: email, password: password)
         
-        let manager = UserInteractor.init(manager: UserDummy()).manager
+        let manager = UserInteractor.init(manager: UserFirebase()).manager
         manager.register(user: user, onSuccess: { (user) in
             self.navigateToDiscussions(user: user)
         }) { (error) in
@@ -83,7 +83,7 @@ class LoginViewController: UIViewController {
         
         let user = User.init(id: "", email: email, password: nil)
         
-        let manager = UserInteractor.init(manager: UserDummy()).manager
+        let manager = UserInteractor.init(manager: UserFirebase()).manager
         manager.recoverPassword(user: user, onSuccess: { (user) in
             self.showAlert(title: "Password", message: "Password recovered")
         }) { (error) in
