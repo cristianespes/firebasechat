@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19095AC821C04E7300801F2B /* UploadFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19095AC721C04E7300801F2B /* UploadFirebase.swift */; };
 		19B6B7CE21BEFB3F00724F43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19B6B7CD21BEFB3F00724F43 /* GoogleService-Info.plist */; };
 		19B6B7D221BF005B00724F43 /* UserFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7D121BF005B00724F43 /* UserFirebase.swift */; };
 		19B6B7D421BF08DA00724F43 /* DiscussionFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B6B7D321BF08DA00724F43 /* DiscussionFirebase.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19095AC721C04E7300801F2B /* UploadFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFirebase.swift; sourceTree = "<group>"; };
 		19B6B7CD21BEFB3F00724F43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		19B6B7D121BF005B00724F43 /* UserFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFirebase.swift; sourceTree = "<group>"; };
 		19B6B7D321BF08DA00724F43 /* DiscussionFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscussionFirebase.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				19B6B7D321BF08DA00724F43 /* DiscussionFirebase.swift */,
 				19B6B7DA21BF175E00724F43 /* MessageFirebase.swift */,
+				19095AC721C04E7300801F2B /* UploadFirebase.swift */,
 				19B6B7D121BF005B00724F43 /* UserFirebase.swift */,
 				19B6B7D821BF146300724F43 /* LogFirebase.swift */,
 			);
@@ -411,6 +414,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-ChatKeepcoding/Pods-ChatKeepcoding-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -421,6 +425,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -470,6 +475,7 @@
 				33845B68206DA84D00800A99 /* DiscussionsViewController+Table.swift in Sources */,
 				338BCB4220725D66004303F7 /* LogInteractor.swift in Sources */,
 				338BCB4420725D81004303F7 /* LogManager.swift in Sources */,
+				19095AC821C04E7300801F2B /* UploadFirebase.swift in Sources */,
 				338BCB4620725E34004303F7 /* Event.swift in Sources */,
 				33845B2A206C19EB00800A99 /* UserDummy.swift in Sources */,
 				338BCB482072621A004303F7 /* LogDummy.swift in Sources */,

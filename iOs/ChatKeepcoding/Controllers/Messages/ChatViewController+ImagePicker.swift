@@ -23,15 +23,17 @@ extension ChatViewController: UIImagePickerControllerDelegate, UINavigationContr
                                            type: MessageTypeEnum.image.rawValue,
                                            value: name)
                 
-                let uploadManager = UploadInteractor.init(manager: UploadDummy()).manager
+                // Primero subimos la imagen y después mandamos el mensaje, para que el usuario receptor pueda descargar la imagen
+                let uploadManager = UploadInteractor.init(manager: UploadFirebase()).manager
                 uploadManager.save(name: name, image: pickedImage, onSuccess: { url in
                     
                     message.value = url
                     
                     let manager = MessageInteractor.init(manager: MessageFirebase.init(discussion: self.actualDiscussion)).manager
                     manager.add(message: message, onSuccess: {
-                        self.messages.append(message)
-                        self.messagesCollectionView.insertSections([self.messages.count - 1])
+                        //self.messages.append(message)
+                        //self.messagesCollectionView.insertSections([self.messages.count - 1])
+                        // Lo comentamos, sino se va a repetir
                     }, onError: { (error) in
                         print(error)
                     })

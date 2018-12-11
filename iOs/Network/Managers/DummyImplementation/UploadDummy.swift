@@ -6,7 +6,6 @@
 //  Copyright © 2018 ERISCO. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public class UploadDummy: UploadManager {

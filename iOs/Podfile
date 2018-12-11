@@ -9,6 +9,8 @@ target 'ChatKeepcoding' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'FirebaseUI/Database'
+  pod 'FirebaseStorage'
+  pod 'Kingfisher'
   
   
   post_install do |installer|
