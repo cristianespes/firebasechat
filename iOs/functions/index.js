@@ -1,6 +1,8 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
+admin.initializeApp();
+
 exports.hello = functions.https.onRequest((request, response) => {
  response.send("Hello from Firebase!");
 });
@@ -19,13 +21,19 @@ exports.newMessage = functions.database.ref('/messages/{discussionId}/{messageId
     var message_value = message.type == "image" ? "It's an image!!" : message.value;
     message_value = message.displayName + ": " + message_value;
 
-    admin.initializeApp();
-
     const setLastMessageOnDiscussion = admin.database().ref(`/discussions/${discussionId}/lastMessage`).set(message_value);
 
     //ENVIAR NOTIFICACION PUSH
 
+    const payload = {
+        notification : {
+            title : message.displayName,
+            body : message.value
+        }
+    }
 
-    return Promise.all([setLastMessageOnDiscussion])
+    const sendMessage = admin.messaging().sendToTopic("ALL", payload);
+
+    return Promise.all([setLastMessageOnDiscussion, sendMessage])
 
 });

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sNt-wJ-Dsf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sNt-wJ-Dsf">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -143,16 +142,26 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjL-z6-ikv">
+                                                    <rect key="frame" x="15" y="46" width="345" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="cOn-W6-Dpv" firstAttribute="leading" secondItem="3vi-KP-lPe" secondAttribute="leadingMargin" id="Sga-FW-Cb1"/>
+                                                <constraint firstItem="bjL-z6-ikv" firstAttribute="bottom" secondItem="3vi-KP-lPe" secondAttribute="bottomMargin" id="fpg-Cl-YRc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="cOn-W6-Dpv" secondAttribute="trailing" id="n4B-ca-aG7"/>
                                                 <constraint firstItem="cOn-W6-Dpv" firstAttribute="top" secondItem="3vi-KP-lPe" secondAttribute="topMargin" id="qoa-ln-Tkh"/>
+                                                <constraint firstItem="bjL-z6-ikv" firstAttribute="leading" secondItem="3vi-KP-lPe" secondAttribute="leadingMargin" id="sjF-Sw-Nf1"/>
+                                                <constraint firstItem="bjL-z6-ikv" firstAttribute="trailing" secondItem="3vi-KP-lPe" secondAttribute="trailingMargin" id="uXK-eV-mjm"/>
                                                 <constraint firstItem="cOn-W6-Dpv" firstAttribute="leading" secondItem="3vi-KP-lPe" secondAttribute="leadingMargin" id="yIF-zg-7H0"/>
                                                 <constraint firstItem="cOn-W6-Dpv" firstAttribute="top" secondItem="3vi-KP-lPe" secondAttribute="topMargin" id="yPM-yE-2ca"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lastMessageLabel" destination="bjL-z6-ikv" id="ZZC-c9-QJm"/>
                                             <outlet property="titleLabel" destination="cOn-W6-Dpv" id="8K2-pw-5Fo"/>
                                             <segue destination="apq-Om-4AD" kind="show" identifier="showChat" id="SOO-nh-KFa"/>
                                         </connections>

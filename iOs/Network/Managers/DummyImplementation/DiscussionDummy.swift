@@ -13,10 +13,12 @@ public class DiscussionDummy: DiscussionManager {
     public func list(onSuccess: @escaping ([Discussion]) -> Void, onError: ErrorClosure?) {
         
         let d1 = Discussion.init(uid: "1",
-                                 title: "Firebase")
+                                 title: "Firebase",
+                                 lastMessage: "")
         
         let d2 = Discussion.init(uid: "2",
-                                 title: "Clean Architecture")
+                                 title: "Clean Architecture",
+                                 lastMessage: "")
         
         var discussions: [Discussion] = [Discussion]()
         
